@@ -1,0 +1,11 @@
+const pokemonIndices = [x]; // Replace [x] with the dex number of the Pokémon
+
+pokemonIndices.forEach(index => {
+    // Only update the valueReduction for the specified Pokémon
+    this.scene.gameData.starterData[index] = {
+        ...this.scene.gameData.starterData[index], // Preserve existing properties
+        valueReduction: x // Replace x with the desired value for value reduction
+    };
+
+    console.log(`Value reduction updated for Pokémon ${index}.`);
+});
